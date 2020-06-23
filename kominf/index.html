@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="hero">
+          <h2>DTS H 11</h2>
+          <p class="sub-heading">Electronics</p>
+        </div>
+        <div class="fitur fitur1">
+          <h4 class="price">IDR 11120K</h4>
+          <p class="item">Laptop</p>
+        </div>
+        <div class="fitur fitur2">
+          <h4 class="price">IDR 6000K</h4>
+          <p class="item">Hand Phone</p>
+        </div>
+      </header>
+
+      <nav class="menu">
+        <div class="menu-toggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="brand">
+          <h1>DTS H11</h1>
+        </div>
+        <ul class="menu-list">
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#">Iphone</a></li>
+          <li><a href="#">Macbook</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <section class="serviss">
+        <div class="servis">
+          <div class="ikon">💻</div>
+          <h3>Mac</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores
+            tempora, excepturi necessitatibus voluptatum inventore minus.
+          </p>
+        </div>
+        <div class="servis">
+          <div class="ikon">📱</div>
+          <h3>Iphone</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores
+            tempora, excepturi necessitatibus voluptatum inventore minus.
+          </p>
+        </div>
+      </section>
+    </div>
+    <script>
+      const menuToggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('nav ul');
+
+      menuToggle.addEventListener('click', function () {
+        nav.classList.toggle('slide');
+      });
+    </script>
+  </body>
+</html>
